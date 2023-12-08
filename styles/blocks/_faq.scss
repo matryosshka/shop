@@ -1,0 +1,130 @@
+.faqs {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.faq {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray;
+  margin: -1px 0 0 0;
+  cursor: pointer;
+}
+
+.faq__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+.faq__title {
+  min-width: 90%;
+  margin-right: 20px;
+}
+
+.faq.active .faq__title {
+  min-width: 40%;
+}
+
+.faq__title p {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $gray;
+
+  @include phones {
+    font-size: 22px;
+  }
+}
+
+.faq.active .faq__title p {
+  white-space: pre-line;
+}
+
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  margin-right: 30px;
+  display: none;
+  transition: max-height 0.6s ease;
+
+  @include phones {
+    font-size: 16px;
+    margin-top: 5%;
+  }
+}
+
+.faq__answer p {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.faq__answer span {
+  color: $gray;
+  font-weight: 600;
+}
+
+.faq.active {
+  border-color: $blue;
+  border-top-color: $blue;
+  border-bottom-color: $blue;
+  z-index: 8;
+}
+
+.faq.active + .faq {
+  border-top-color: $blue;
+}
+
+.faq.active .faq__title p {
+  color: $violet;
+}
+
+.faq.active .faq__answer {
+  min-height: fit-content;
+  max-height: fit-content;
+  animation: fade 1s ease-in-out;
+  display: block;
+}
+
+.faq.active svg {
+  transform: rotate(180deg);
+  stroke: $blue;
+}
+
+svg {
+  transition: transform 0.4s ease;
+}
+
+.faq__icon {
+  object-fit: cover;
+  flex-shrink: 0;
+  margin: 0 2% 0 0;
+}
+
+.faq__icon-img {
+  width: 20px;
+  height: 20px;
+  stroke: $gray;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,20 @@
+.title {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 3%;
+
+  @include tablets {
+    margin-bottom: 5%;
+    padding-top: 1%;
+  }
+
+  @include phones {
+    font-size: 26px;
+    margin-bottom: 7%;
+    padding-top: 4%;
+  }
+
+  @include small-phones {
+    font-size: 24px;
+  }
+}

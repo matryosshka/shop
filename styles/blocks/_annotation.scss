@@ -1,0 +1,15 @@
+.annotation {
+  min-height: 40px;
+  margin-top: 10%;
+}
+
+.annotation__text {
+  font-size: 12px;
+}
+
+.annotation__link {
+  
+  &:hover {
+    color: #BD86C7;
+  }
+}

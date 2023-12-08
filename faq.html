@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magic</title>
+  <link rel="icon" href="./img/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="maincontent">
+
+      <section class="section faqs">
+        <div class="container faqs__container">
+          <h1 class="title">Магические методы &#128302;</h1>
+
+          <ul class="faqs__list">
+
+            <li class="faqs__item faq">
+              <div class="faq__content">
+                <div class="faq__title">
+                  <p>splice</p>
+                </div>
+
+                <div class="faq__answer">
+                  <p>Синтаксис:</p>
+                  <p><span>arr.splice(start[, deleteCount, elem1, ..., elemN])</span></p>
+                  <p>Метод <span>arr.splice</span> – это универсальный «швейцарский нож» для работы с массивами. Умеет
+                    всё: добавлять, удалять и заменять элементы.</p>
+                </div>
+              </div>
+
+              <div class="faq__icon">
+                <svg class="faq__icon-img">
+                  <use xlink:href="./img/sprite.svg#faq"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faqs__item faq">
+              <div class="faq__content">
+                <div class="faq__title">
+                  <p>slice</p>
+                </div>
+
+                <div class="faq__answer">
+                  <p>Синтаксис:</p>
+                  <p><span>arr.slice([start], [end])</span></p>
+                  <p>Возвращает новый массив, в который копирует все элементы с индекса start до end (не включая end).
+                    start и end могут быть отрицательными, в этом случае отсчёт позиции будет вестись с конца массива.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq__icon">
+                <svg class="faq__icon-img">
+                  <use xlink:href="./img/sprite.svg#faq"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faqs__item faq">
+              <div class="faq__content">
+                <div class="faq__title">
+                  <p>concat</p>
+                </div>
+
+                <div class="faq__answer">
+                  <p>Синтаксис:</p>
+                  <p><span>arr.concat(arg1, arg2...)</span></p>
+                  <p>Метод <span>arr.concat</span> создаёт новый массив, в который копирует данные из других массивов и
+                    дополнительные значения.</p>
+                </div>
+              </div>
+
+              <div class="faq__icon">
+                <svg class="faq__icon-img">
+                  <use xlink:href="./img/sprite.svg#faq"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faqs__item faq">
+              <div class="faq__content">
+                <div class="faq__title">
+                  <p>forEach()</p>
+                </div>
+
+                <div class="faq__answer">
+                  <p>Синтаксис:</p>
+                  <p><span>arr.forEach(function(item, index, array) {<br>
+                      <i>// ... делать что-то с item</i><br>
+                      }); <br>
+                    </span></p>
+                  <p>Метод <span>arr.forEach</span> позволяет запускать функцию для каждого элемента массива.</p>
+                </div>
+              </div>
+
+              <div class="faq__icon">
+                <svg class="faq__icon-img">
+                  <use xlink:href="./img/sprite.svg#faq"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faqs__item faq">
+              <div class="faq__content">
+                <div class="faq__title">
+                  <p>map</p>
+                </div>
+
+                <div class="faq__answer">
+                  <p>Синтаксис:</p>
+                  <p><span>let result = arr.map(function(item, index, array) {<br>
+                      <i>// возвращается новое значение вместо элемента</i><br>
+                      }); <br>
+                    </span></p>
+                  <p>Метод <span>arr.map</span> вызывает функцию для каждого элемента массива и возвращает массив
+                    результатов выполнения этой функции.</p>
+                </div>
+              </div>
+
+              <div class="faq__icon">
+                <svg class="faq__icon-img">
+                  <use xlink:href="./img/sprite.svg#faq"></use>
+                </svg>
+              </div>
+            </li>
+
+            <li class="faqs__item faq">
+              <div class="faq__content">
+                <div class="faq__title">
+                  <p>sort(fn)</p>
+                </div>
+
+                <div class="faq__answer">
+                  <p>Вызов <span>arr.sort()</span> сортирует массив на месте, меняя в нём порядок элементов.</p>
+                  <p>Он также возвращает отсортированный массив, но обычно возвращаемое значение игнорируется, так как
+                    изменяется сам arr.</p>
+                </div>
+              </div>
+
+              <div class="faq__icon">
+                <svg class="faq__icon-img">
+                  <use xlink:href="./img/sprite.svg#faq"></use>
+                </svg>
+              </div>
+            </li>
+
+          </ul>
+
+          <button class="btn hidden">Показать еще</button>
+
+        </div>
+      </section>
+
+    </div>
+
+    <section class="annotation">
+      <div class="container annotation__container">
+        <div class="annotation__text">&#127770; Текстовый контент взят с ресурсов: <a
+            href="https://learn.javascript.ru/" class="annotation__link">Лёрн JS</a> и <a href="https://doka.guide/"
+            class="annotation__link">Дока</a></div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="./scripts/faq.js"></script>
+  <script src="./scripts/show.js"></script>
+
+</body>
+
+</html>

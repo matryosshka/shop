@@ -1,0 +1,25 @@
+$containerWidth: 1220px;
+$baseFontSize: 18px;
+
+//breakpoints
+$large-tablets: 1080px;
+$tablets: 768px;
+$phones: 480px;
+$small-phones: 320px;
+
+//colors
+$gray: #868D94;
+$violet: #BD86C7;
+$blue: #83c7d6;
+$light: #E2E3E7;
+
+// setups
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import "./_layout.scss";
+@import "./_media.scss";
+
+//blocks
+@import "./blocks/_title.scss";
+@import "./blocks/_faq.scss";
+@import "./blocks/_annotation.scss";
+@import "./blocks/_btn.scss";
